@@ -136,10 +136,32 @@ h3 img{
     padding-right: 9px;
     padding-left: 9px;
     font-family: 'Open Sans',sans-serif;
-    color: #7a7a7a;
+    color: #faf6f6;
     font-size: 12px;
     line-height: 21px;
     font-weight: 600;
     text-align: center;
+}
+
+
+
+footer{
+
+    padding: 10px 10px 0 10px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #7a7a7a;
+    color: white;
+    text-align: justify;
+}
+
+
+
+footer .row{
+margin:0;
 }
 
