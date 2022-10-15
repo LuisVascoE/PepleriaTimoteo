@@ -61,6 +61,30 @@ include '../Global/config.php';
 
         <div class="row justify-content-center">
 
+        <?php
+          function pdo_connect_mysql() {
+          try {
+           return new PDO('mysql:host=' . SERVIDOR . ';dbname=' .BD . ';charset=utf8', USUARIO, PASSWORD, [
+                  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                  PDO::ATTR_EMULATE_PREPARES => false
+                ]);
+          } catch (PDOException $exception) {
+           // If there is an error with the connection, stop the script and display the error.
+           die ('Failed to connect to database!');
+          }
+        }
+      
+        $pdo = pdo_connect_mysql();
+
+        ?>
+
+        
+        
+        
+        
+        
+
           <div class="card" style="width: 18rem;">
               <img src="/img/Lapiceros.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
@@ -78,8 +102,19 @@ include '../Global/config.php';
               <h5 class="card-title">MORRAL XTECH DURHAM XTB-220 PARA PORTÁTIL DE 15.6", AZUL</h5>
               <p class="card-text">Marca: xtech Cod. 644197 PRECIO ONLINE:
                 $74.900</p>
+
+
+                <form action="" method="post">
+                  <input type="text" name="id" id="id">
+                  <input type="text" name="nombre" id="nombre">
+                  <input type="text" name="precio" id="precio">
+                  <input type="text" name="cantidad" id="cantidad">
+                <a href="#" class="btn btn-primary" name="btnAccion" value="Agregar"  type="submit"><i class="bi bi-cart4"></i>Añadir al Carrito</a>
+                </form>
               
-              <a href="#" class="btn btn-primary" name="btnAccion" value="Agregar"  type="submit"><i class="bi bi-cart4"></i>Añadir al Carrito</a>
+
+            
+              
               </div>
           </div>
   
