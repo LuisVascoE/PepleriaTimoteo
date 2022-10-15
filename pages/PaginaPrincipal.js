@@ -1,0 +1,7 @@
+const PaginaPrincipal=()=>{
+
+
+
+}
+
+export {PaginaPrincipal}
