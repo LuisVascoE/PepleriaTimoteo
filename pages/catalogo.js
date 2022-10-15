@@ -1,9 +1,3 @@
-<?php
-include '../Global/conexion.php';
-include '../Global/config.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,25 +7,25 @@ include '../Global/config.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Acompañando a nuestros clientes desde tiempos Inmemorables">
     <meta name="keywords" content="Utiles Escolares y demas">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" >
     
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
-        <img class="mi-nav-logo" src="../img/favicon.ico" alt="">
-        <a class="navbar-brand" href="../index.php">Pepleria Timoteo</a>
+        <img class="mi-nav-logo" src="../assets/img/favicon.ico" alt="">
+        <a class="navbar-brand" href="../index.html">Pepleria Timoteo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="../index.php">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="../views/catalogo.php">Catálogo</a>
-            <a class="nav-link" href="../views/carrito.php">Carrito<i class="bi bi-cart4"></i></a>
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="../views/catalogo.html">Catálogo</a>
+            <a class="nav-link" href="../views/carrito.html">Carrito<i class="bi bi-cart4"></i></a>
             
             
           </div>
@@ -61,23 +55,6 @@ include '../Global/config.php';
 
         <div class="row justify-content-center">
 
-        <?php
-          function pdo_connect_mysql() {
-          try {
-           return new PDO('mysql:host=' . SERVIDOR . ';dbname=' .BD . ';charset=utf8', USUARIO, PASSWORD, [
-                  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                  PDO::ATTR_EMULATE_PREPARES => false
-                ]);
-          } catch (PDOException $exception) {
-           // If there is an error with the connection, stop the script and display the error.
-           die ('Failed to connect to database!');
-          }
-        }
-      
-        $pdo = pdo_connect_mysql();
-
-        ?>
 
         
         
@@ -86,7 +63,7 @@ include '../Global/config.php';
         
 
           <div class="card" style="width: 18rem;">
-              <img src="/img/Lapiceros.jpg" class="card-img-top img-fluid" alt="...">
+              <img src="../assets/img/Lapiceros.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
               <h5 class="card-title">BOLÍGRAFO PAPER MATE INK JOY X 8 UDS.</h5>
               <p class="card-text">Marca: Papermare Cod. 525999 PRECIO ONLINE:
@@ -97,21 +74,14 @@ include '../Global/config.php';
           </div>
   
           <div class="card" style="width: 18rem;">
-              <img src="/img/morral-para-portatil-xtb-220-15-6-xtech-durham-azul-798302230866.jpg" class="card-img-top img-fluid" alt="...">
+              <img src="../assets/img/morral-para-portatil-xtb-220-15-6-xtech-durham-azul-798302230866.jpg" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
               <h5 class="card-title">MORRAL XTECH DURHAM XTB-220 PARA PORTÁTIL DE 15.6", AZUL</h5>
               <p class="card-text">Marca: xtech Cod. 644197 PRECIO ONLINE:
                 $74.900</p>
-
-
-                <form action="" method="post">
-                  <input type="text" name="id" id="id">
-                  <input type="text" name="nombre" id="nombre">
-                  <input type="text" name="precio" id="precio">
-                  <input type="text" name="cantidad" id="cantidad">
                 <a href="#" class="btn btn-primary" name="btnAccion" value="Agregar"  type="submit"><i class="bi bi-cart4"></i>Añadir al Carrito</a>
-                </form>
-              
+
+
 
             
               
@@ -119,7 +89,7 @@ include '../Global/config.php';
           </div>
   
           <div class="card" style="width: 18rem; ">
-              <img src="/img/set-de-borradores-para-arte-x-4-piezas-9328577011870.webp" class="card-img-top img-fluid" alt="...">
+              <img src="../assets/img/set-de-borradores-para-arte-x-4-piezas-9328577011870.webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
               <h5 class="card-title">SET DE BORRADORES PARA ARTE X 4 PIEZAS</h5>
               <p class="card-text">Marca: Mont marte Cod. 635568 PRECIO ONLINE:
@@ -131,7 +101,7 @@ include '../Global/config.php';
   
           
           <div class="card" style="width: 18rem;">
-              <img src="/img/cuaderno-105-rayado-de-80-hojas-argollado-academico-surtido--7702111589445.webp" class="card-img-top img-fluid" alt="...">
+              <img src="../assets/img/cuaderno-105-rayado-de-80-hojas-argollado-academico-surtido--7702111589445.webp" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
               <h5 class="card-title">CUADERNO ACADÉMICO 105 RAYADO DE 80 HOJAS ARGOLLADO (SURTIDO)</h5>
               <p class="card-text">Marca: Norma Cod. 630908 PRECIO ONLINE:
@@ -178,7 +148,7 @@ include '../Global/config.php';
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4 class="mio-acercade"><img src="/img/favicon.ico" alt="mio-arcade">Pepelria Timoteo</h4>
+                        <h4 class="mio-acercade"><img src="../assets/img/favicon.ico" alt="mio-arcade">Pepelria Timoteo</h4>
                         <p class="mio-arcade">Somos más que una papelería, aquí también podrás encontrar portafolio de: Hogar, tecnología, juguetería, electromenores, mascotas, y muchas más... Tenemos envíos a todo Colombia. C</p>
                     </div>
                 </div>
