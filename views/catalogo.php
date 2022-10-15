@@ -17,15 +17,15 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <img class="mi-nav-logo" src="../img/favicon.ico" alt="">
-        <a class="navbar-brand" href="../index.html">Pepleria Timoteo</a>
+        <a class="navbar-brand" href="../index.php">Pepleria Timoteo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="../index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="../views/catalogo.html">Catálogo</a>
-            <a class="nav-link" href="../views/carrito.html">Carrito<i class="bi bi-cart4"></i></a>
+            <a class="nav-link active" href="../index.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../views/catalogo.php">Catálogo</a>
+            <a class="nav-link" href="../views/carrito.php">Carrito<i class="bi bi-cart4"></i></a>
             
             
           </div>
