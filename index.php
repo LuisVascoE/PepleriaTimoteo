@@ -1,4 +1,4 @@
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +37,7 @@
     <div class="jumbotron jumbotron-fluid ">
         <div class="container">
           <h1 class="display-4">Pepleria Timoteo</h1>
+          <br>          
           <p class="lead">Acompañando a nuestros clientes desde tiempos Inmemorables</p>
         </div>
       </div>

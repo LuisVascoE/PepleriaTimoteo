@@ -1,23 +1,25 @@
 <?php
 
-$servidor="mysql: dbname=" .BD. ";host=" .SERVIDOR;
-try{
+class conexion{
 
-    $pdo= new PDO($servidor,USUARIO, PASSWORD, 
+    private $user="root";
+    private $pass="";
     
-                array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8")
-            );
-    echo "<script>alert('Conectado... ')</script>";
+    function conectar(){
+        try{
+            $pdo=new PDO('mysql:host=localhost;dbname=tienda', $this->user, $this->pass);
+        
+            echo "<script>alert('Conexion correcta :D')</script>";
+        }catch(PDOException $error){
 
-}catch(PDOException $e){
+        
+            echo '<script type="text/javascript">alert("No me pude conectar :c'. $error->getMessage() . '")</script>';
 
-    echo "<script>alert('Error...')</script>";
+        }
+    
 
-
-
+    }
 }
-
-
+$nuevaconexion = new conexion();
+$nuevaconexion->conectar();
 ?>
-
-php

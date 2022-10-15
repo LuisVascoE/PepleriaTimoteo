@@ -1,3 +1,9 @@
+<?php
+include '../Global/conexion.php';
+include '../Global/config.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +41,8 @@
       <div class="jumbotron jumbotron-fluid ">
         <div class="container">
           <h1 class="display-4">Catálogo</h1>
+          <br>
+          <br>
           <p class="lead">Ofreciendo lo mejor para nuestro Clientes</p>
         </div>
       </div>
