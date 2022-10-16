@@ -9,6 +9,7 @@ import getHash from "../connections/helpers/getHash.js"
 import resolverRuta from "../connections/helpers/resolverRuta.js"
 import { IniciarSesion } from "../pages/IniciarSesion.js"
 
+
 const Rutas={
     "/":PaginaPrincipal,
     "/catalogo": Catalogo,
