@@ -1,9 +1,8 @@
+const Error404= ()=>
+`
+<div class="fs-1 font-weight-bold"><h7>Error 404</h7></div>
 
-
-const Error404= ()=>`<div class="fs-1 fw-bold"><h2>Erorr 404</h2></div>`
-
-
-
+`
 
 
 

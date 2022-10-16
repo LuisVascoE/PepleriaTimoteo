@@ -2,7 +2,6 @@ const Registrarse= ()=>{
 
 
 
-
 }
 
-export {Registrarse}
+export{Registrarse}

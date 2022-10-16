@@ -1,8 +1,12 @@
 
 import {Nav} from "../layout/Nav.js"
-import{Main} from "../layout/Main.js"
 import{Footer} from "../layout/Footer.js"
 
+const Rutas={
+    
+
+
+}
 
 const App= ()=>{
 
@@ -11,8 +15,23 @@ const App= ()=>{
     const footer=document.querySelector("footer")
 
     header.innerHTML=Nav()
-    main.innerHTML=Main()
     footer.innerHTML=Footer()
+
+
+
+    let pagina= (Rutas["/perfil"])
+
+
+    main.innerHTML= pagina()
+
+
+ 
+
+
+    
+    
+
+
 
 
 }

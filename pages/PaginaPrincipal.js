@@ -1,7 +1,0 @@
-const PaginaPrincipal=()=>{
-
-
-
-}
-
-export {PaginaPrincipal}
