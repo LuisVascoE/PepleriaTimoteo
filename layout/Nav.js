@@ -10,11 +10,10 @@ const Nav= ()=>{
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="../pages/catalogo.js">Catálogo</a>
-            <a class="nav-link" href="../pages/carrito.js">Carrito<i class="bi bi-cart4"></i></a>
-            
-           
+            <a class="nav-link" href="#/catalogo/">Catálogo <i class="bi bi-book"></i></a>
+            <a class="nav-link" href="#/carrito/">Carrito<i class="bi bi-cart4"></i></a>
+            <a class="nav-link" href="#/iniciarsecion/">Iniciar Seción <i class="bi bi-box-arrow-in-right"></i></a>
+            <a class="nav-link" href="#/registrarse/">Registrarse <i class="bi bi-person-plus"></i></a>
           </div>
         </div>
       </nav>
