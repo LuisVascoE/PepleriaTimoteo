@@ -172,3 +172,15 @@ margin: 0;
 
 }
 
+.mi-card{
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.mi-nav{
+    display: flex;
+    justify-content: space-between;
+}

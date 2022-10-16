@@ -24,7 +24,7 @@ const Catalogo= async()=>{
               ${
 
                     catalogo.map(catalogo=>
-                    CatalogoCards(catalogo, false)
+                    CatalogoCards(catalogo, true )
               
 
                   )
