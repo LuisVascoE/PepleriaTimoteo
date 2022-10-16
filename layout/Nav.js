@@ -12,10 +12,22 @@ const Nav= ()=>{
           <div class="navbar-nav">
             <a class="nav-link" href="#/catalogo/">Catálogo <i class="bi bi-book"></i></a>
             <a class="nav-link" href="#/carrito/">Carrito<i class="bi bi-cart4"></i></a>
-            <a class="nav-link" href="#/iniciarsecion/">Iniciar Seción <i class="bi bi-box-arrow-in-right"></i></a>
+            <a class="nav-link" href="#/iniciarsesion/">Iniciar Sesión <i class="bi bi-box-arrow-in-right"></i></a>
             <a class="nav-link" href="#/registrarse/">Registrarse <i class="bi bi-person-plus"></i></a>
-          </div>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle ml-auto text-righ" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Usuario
+        </a>
+        <div class="dropdown-menu text-righ">
+          <a class="dropdown-item" href="#">Cuenta</a>
+          <a class="dropdown-item" href="#">Cerrar sesion</a>
+        
         </div>
+      </li>
+          </div>
+          
+        </div>
+        
       </nav>
     
     `

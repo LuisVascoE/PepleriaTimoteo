@@ -7,10 +7,13 @@ import { Error404 } from "../pages/Error404.js"
 import { Catalogo } from "../pages/Catalogo.js"
 import getHash from "../connections/helpers/getHash.js"
 import resolverRuta from "../connections/helpers/resolverRuta.js"
+import { IniciarSesion } from "../pages/IniciarSesion.js"
 
 const Rutas={
     "/":PaginaPrincipal,
-    "/catalogo": Catalogo
+    "/catalogo": Catalogo,
+    "/registrarse":Registrarse,
+    "/iniciarsesion":IniciarSesion,
 
 
 }
